@@ -3,6 +3,8 @@ package com.github.cursospringboot.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 import java.util.UUID;
 
@@ -10,6 +12,8 @@ import java.util.UUID;
 @Table(name = "clientes")
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
+@Data
 
 public class Cliente {
 
