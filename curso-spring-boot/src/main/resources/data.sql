@@ -1,1 +1,1 @@
-INSERT INTO CLIENTES(ID, NOME, EMAIL) VALUES ('66768442-19b7-11ee-be56-0242ac120002','João','joao.john@gmail.com');
+INSERT INTO CLIENTES(ID, NOME, EMAIL) VALUES ('66768442-19b7-11ee-be56-0242ac120002','Freeza','pqVcMatou.oKuririn@gmail.com');
