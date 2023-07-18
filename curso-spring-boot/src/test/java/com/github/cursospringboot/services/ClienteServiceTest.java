@@ -2,6 +2,7 @@ package com.github.cursospringboot.services;
 
 import com.github.cursospringboot.models.Cliente;
 import com.github.cursospringboot.repositories.ClienteRepository;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -22,7 +23,9 @@ public class ClienteServiceTest {
     void testListar() {
         Cliente cliente =  Mockito.mock(Cliente.class);
         Mockito.when(repository.findAll()).thenReturn(List.of(cliente));
-        service.listarClientes();
+        List<Cliente> lista = service.listarClientes();
+        Assertions.assertEquals(1, lista.size());
+//        service.listarClientes();
         Mockito.verify(repository, Mockito.times(1)).findAll();
     }
 
