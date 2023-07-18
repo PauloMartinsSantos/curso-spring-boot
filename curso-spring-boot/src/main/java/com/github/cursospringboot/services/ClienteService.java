@@ -16,11 +16,11 @@ public class ClienteService {
     public List<Cliente> listarClientes() {
         return repository.findAll();
     }
-    public void criar(ClienteDto dto){
+    public Cliente criar(ClienteDto dto){
         Cliente cliente = Cliente.builder()
-                .nome(dto.getNome())
-                .email(dto.getEmail())
-                .build();
-        repository.save(cliente);
+                            .nome(dto.getNome())
+                            .email(dto.getEmail())
+                            .build();
+       return repository.save(cliente);
     }
 }
