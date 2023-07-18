@@ -33,6 +33,7 @@ public class ClienteServiceTest {
 
     @Test
     void testCriar() {
+
         ClienteDto clienteDto = Mockito.mock(ClienteDto.class);
         UUID uuidMock = UUID.randomUUID();
         Cliente clienteMock = new Cliente(uuidMock,"Paulo","paulo.martins@viavarejo.com.br");
